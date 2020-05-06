@@ -1,5 +1,6 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const Dotenv = require('dotenv-webpack')
 
 const rules = [
   {
@@ -22,7 +23,7 @@ const rules = [
   },
 ]
 
-module.exports = () => ({
+module.exports = (env, { mode }) => ({
   entry: path.join(__dirname, 'src', 'index.js'),
   output: {
     filename: 'app.[hash].js',
@@ -34,6 +35,7 @@ module.exports = () => ({
       title: 'JGL Phones',
       template: './public/index.html',
     }),
+    new Dotenv(),
   ],
   optimization: {
     splitChunks: {

@@ -1,13 +1,16 @@
-module.exports = () => {
+const purgeCSS = require('@fullhuman/postcss-purgecss')({
+  content: ['./src/**/*.js', './public/index.html'],
+  defaultExtractor: (content) => content.match(/[A-Za-z0-9-_:/]+/g) || [],
+})
+
+module.exports = ({ env }) => {
   return {
     plugins: [
       require('tailwindcss'),
       require('autoprefixer'),
-      //TODO:  only in prod
-      require('@fullhuman/postcss-purgecss')({
-        content: ['./src/**/*.js', './public/index.html'],
-        defaultExtractor: (content) => content.match(/[A-Za-z0-9-_:/]+/g) || [],
-      }),
+      //TODO:  doest't work!! - env undefined
+      // ...(env === 'production' ? [purgeCSS] : []),
+      ...[purgeCSS],
     ],
   }
 }
