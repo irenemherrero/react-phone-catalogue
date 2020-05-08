@@ -9,8 +9,7 @@ module.exports = ({ env }) => {
       require('tailwindcss'),
       require('autoprefixer'),
       //TODO:  doest't work!! - env undefined
-      // ...(env === 'production' ? [purgeCSS] : []),
-      ...[purgeCSS],
+      // ...(env === 'production' ? [purgeCSS] : [])
     ],
   }
 }
