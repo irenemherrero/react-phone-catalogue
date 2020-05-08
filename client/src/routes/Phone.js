@@ -3,9 +3,9 @@ import { PhoneDetailContainer } from '../PhoneDetail/PhoneDetailContainer'
 
 const Phone = () => {
   return (
-    <>
+    <main>
       <PhoneDetailContainer />
-    </>
+    </main>
   )
 }
 

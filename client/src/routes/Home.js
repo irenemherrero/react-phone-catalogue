@@ -3,9 +3,9 @@ import { PhonesListContainer } from '../PhonesList/PhonesListContainer'
 
 const Home = () => {
   return (
-    <>
+    <main>
       <PhonesListContainer />
-    </>
+    </main>
   )
 }
 
