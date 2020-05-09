@@ -3,6 +3,9 @@ import styled from 'styled-components'
 import tw from 'tailwind.macro'
 import logo from '../assets/logo.png'
 
+const StickyHeader = styled.div`
+  ${tw`flex sticky top-0 bg-gray-600 p-3 z-50`}
+`
 const Logo = styled.div`
   ${tw`flex items-center text-white mr-12`}
   img {
@@ -12,15 +15,14 @@ const Logo = styled.div`
     ${tw`font-semibold text-lg`}
   }
 `
-
 const Header = () => {
   return (
-    <div className="flex sticky top-0 bg-gray-600 p-3">
+    <StickyHeader>
       <Logo>
         <img src={logo} />
         <h1>JGL Phones</h1>
       </Logo>
-    </div>
+    </StickyHeader>
   )
 }
 

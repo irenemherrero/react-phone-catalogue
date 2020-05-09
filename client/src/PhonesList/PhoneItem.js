@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import tw from 'tailwind.macro'
+import { SpanColor } from '../common/SpanColor'
 
 const ResponsiveContainer = styled.div`
   ${tw`w-full md:w-1/2 lg:w-1/3 px-2 my-2`}
@@ -9,9 +10,10 @@ const ResponsiveContainer = styled.div`
 const PhoneCard = styled.div`
   ${tw`flex flex-row shadow-md bg-white cursor-pointer hover:shadow-xl`}
   &:hover {
-    transform: scale(1.04);
+    transform: scale(1.05);
   }
 `
+
 const PhoneCardImage = styled.img`
   ${tw`h-48 w-40`}
 `
@@ -28,26 +30,19 @@ const ColorsContainer = styled.div`
   ${tw`flex flex-row mt-6`}
 `
 
-const PhoneColor = styled.span`
-  ${tw`w-10 h-5 mr-1 border rounded`}
-  background-color: ${(props) => props.color}
-`
-
 const PhoneItem = (props) => {
   const { id, name, onClick, imageFileName, price, color } = props
   const urlImage = process.env.PHONES_IMAGES_URL + imageFileName
   return (
     <ResponsiveContainer onClick={() => onClick(id)}>
       <PhoneCard>
-        <div className="flex-shrink-0">
-          <PhoneCardImage src={urlImage} alt={name} />
-        </div>
+        <PhoneCardImage src={urlImage} alt={name} />
         <PhoneCardInfo>
           <h1>{name}</h1>
           <p>{price}€</p>
           <ColorsContainer>
             {color.split(',').map((c) => (
-              <PhoneColor key={c} color={c} />
+              <SpanColor key={c} color={c} />
             ))}
           </ColorsContainer>
         </PhoneCardInfo>
