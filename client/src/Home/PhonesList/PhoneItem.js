@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import tw from 'tailwind.macro'
-import { SpanColor } from '../../common/SpanColor'
+import { AvailableColors } from '../../common/ColorsWrapper'
 
 const ResponsiveContainer = styled.div`
   ${tw`w-full md:w-1/2 lg:w-1/3 px-2 my-2`}
@@ -28,11 +28,8 @@ const PhoneCardInfo = styled.section`
     ${tw`text-gray-600`}
   }
   footer {
-    ${tw`self-end m-6 font-semibold text-gray-700 text-lg`}
+    ${tw`self-end m-6 font-semibold text-secondary text-lg`}
   }
-`
-const ColorsContainer = styled.div`
-  ${tw`flex flex-row mt-4`}
 `
 
 const PhoneItem = (props) => {
@@ -45,11 +42,7 @@ const PhoneItem = (props) => {
         <PhoneCardInfo>
           <h1>{name}</h1>
           <h2>{manufacturer}</h2>
-          <ColorsContainer>
-            {color.split(',').map((c) => (
-              <SpanColor key={c} color={c} />
-            ))}
-          </ColorsContainer>
+          <AvailableColors colors={color.split(',')} />
           <footer>
             {price.toLocaleString('es-ES', {
               style: 'currency',
