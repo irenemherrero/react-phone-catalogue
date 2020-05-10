@@ -5,7 +5,7 @@ import tw from 'tailwind.macro'
 import logo from './../assets/logo.png'
 
 const StickyHeader = styled.header`
-  ${tw`flex sticky top-0 bg-gray-600 z-50 text-white`}
+  ${tw`flex sticky top-0 bg-primary z-50 text-white`}
 `
 const Logo = styled.div`
   ${tw`flex items-center p-3`}
