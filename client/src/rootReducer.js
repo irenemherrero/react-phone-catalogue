@@ -1,4 +1,4 @@
-import { phonesReducer } from './PhonesList/PhonesListReducer'
+import { phonesReducer } from './Home/PhonesList/PhonesListReducer'
 
 export default phonesReducer
 

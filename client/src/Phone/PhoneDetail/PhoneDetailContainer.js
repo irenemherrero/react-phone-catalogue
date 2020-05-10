@@ -2,7 +2,7 @@ import React from 'react'
 import { useParams } from 'react-router-dom'
 import { useSelector } from 'react-redux'
 
-import PhoneDetail from './PhoneDetail'
+import { PhoneDetail } from './PhoneDetail'
 
 const PhoneDetailContainer = () => {
   const { id } = useParams()

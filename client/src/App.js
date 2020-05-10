@@ -1,13 +1,11 @@
 import React from 'react'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
-import { Home } from './routes/Home'
-import { Phone } from './routes/Phone'
-import { Header } from './common/Header'
+import { Home } from './Home'
+import { Phone } from './Phone'
 
 const App = () => {
   return (
     <Router>
-      <Header />
       <Switch>
         <Route path="/phone/:id">
           <Phone />

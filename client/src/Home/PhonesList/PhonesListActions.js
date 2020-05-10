@@ -1,4 +1,4 @@
-import { phonesService } from '../services/phonesService'
+import { phonesService } from '../../services/phonesService'
 
 export const ERROR_FETCHING = 'ERROR_FETCHING'
 export const REQUEST_PHONES = 'REQUEST_PHONES'
