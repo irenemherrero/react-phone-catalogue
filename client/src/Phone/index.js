@@ -4,7 +4,7 @@ import { Header } from '../common/Header'
 
 const Phone = () => {
   return (
-    <main className="h-screen">
+    <main>
       <Header title="Phone Detail" />
       <PhoneDetailContainer />
     </main>
