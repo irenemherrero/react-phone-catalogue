@@ -7,16 +7,19 @@ import { SpanColor } from '../../common/SpanColor'
 const ResponsiveContainer = styled.div`
   ${tw`w-full md:w-1/2 lg:w-1/3 px-2 my-2`}
 `
+
+//TODO min-width
 const PhoneCard = styled.div`
   ${tw`flex flex-row shadow-md bg-white cursor-pointer hover:shadow-xl h-48`}
   &:hover {
     transform: scale(1.05);
   }
 `
+
 const PhoneCardImage = styled.img`
   ${tw`w-40`}
 `
-const PhoneCardInfo = styled.div`
+const PhoneCardInfo = styled.section`
   ${tw`flex flex-col pt-6 w-full`}
   h1 {
     ${tw`font-semibold text-xl`}
@@ -24,7 +27,7 @@ const PhoneCardInfo = styled.div`
   h2 {
     ${tw`text-gray-600`}
   }
-  price {
+  footer {
     ${tw`self-end m-6 font-semibold text-gray-700 text-lg`}
   }
 `
@@ -47,7 +50,15 @@ const PhoneItem = (props) => {
               <SpanColor key={c} color={c} />
             ))}
           </ColorsContainer>
-          <price>{price}€</price>
+          <footer>
+            {price.toLocaleString('es-ES', {
+              style: 'currency',
+              currency: 'EUR',
+              // no decimals
+              maximumFractionDigits: 0,
+              minimumFractionDigits: 0,
+            })}
+          </footer>
         </PhoneCardInfo>
       </PhoneCard>
     </ResponsiveContainer>

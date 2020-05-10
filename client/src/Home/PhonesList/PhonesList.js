@@ -6,7 +6,7 @@ import styled from 'styled-components'
 import tw from 'tailwind.macro'
 
 const CardsContainer = styled.div`
-  ${tw`flex flex-wrap my-4 mx-16 md:mx-8 lg:mx-1 xl:mx-16`}
+  ${tw`flex flex-wrap my-4 px-32 md:px-8 lg:px-1 xl:px-16`}
 `
 
 const PhoneList = (props) => {
