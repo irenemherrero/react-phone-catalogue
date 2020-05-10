@@ -8,30 +8,32 @@ const ResponsiveContainer = styled.div`
   ${tw`w-full md:w-1/2 lg:w-1/3 px-2 my-2`}
 `
 const PhoneCard = styled.div`
-  ${tw`flex flex-row shadow-md bg-white cursor-pointer hover:shadow-xl`}
+  ${tw`flex flex-row shadow-md bg-white cursor-pointer hover:shadow-xl h-48`}
   &:hover {
     transform: scale(1.05);
   }
 `
-
 const PhoneCardImage = styled.img`
-  ${tw`h-48 w-40`}
+  ${tw`w-40`}
 `
 const PhoneCardInfo = styled.div`
-  ${tw`flex flex-col p-6`}
+  ${tw`flex flex-col pt-6 w-full`}
   h1 {
-    ${tw`font-semibold text-lg`}
+    ${tw`font-semibold text-xl`}
   }
-  p {
+  h2 {
     ${tw`text-gray-600`}
+  }
+  price {
+    ${tw`self-end m-6 font-semibold text-gray-700 text-lg`}
   }
 `
 const ColorsContainer = styled.div`
-  ${tw`flex flex-row mt-6`}
+  ${tw`flex flex-row mt-4`}
 `
 
 const PhoneItem = (props) => {
-  const { id, name, onClick, imageFileName, price, color } = props
+  const { id, name, manufacturer, color, price, imageFileName, onClick } = props
   const urlImage = process.env.PHONES_IMAGES_URL + imageFileName
   return (
     <ResponsiveContainer onClick={() => onClick(id)}>
@@ -39,12 +41,13 @@ const PhoneItem = (props) => {
         <PhoneCardImage src={urlImage} alt={name} />
         <PhoneCardInfo>
           <h1>{name}</h1>
-          <p>{price}€</p>
+          <h2>{manufacturer}</h2>
           <ColorsContainer>
             {color.split(',').map((c) => (
               <SpanColor key={c} color={c} />
             ))}
           </ColorsContainer>
+          <price>{price}€</price>
         </PhoneCardInfo>
       </PhoneCard>
     </ResponsiveContainer>
@@ -54,10 +57,11 @@ const PhoneItem = (props) => {
 PhoneItem.propTypes = {
   id: PropTypes.number.isRequired,
   name: PropTypes.string.isRequired,
-  onClick: PropTypes.func.isRequired,
-  imageFileName: PropTypes.string,
-  price: PropTypes.number,
+  manufacturer: PropTypes.string,
   color: PropTypes.string,
+  price: PropTypes.number,
+  imageFileName: PropTypes.string,
+  onClick: PropTypes.func.isRequired,
 }
 PhoneItem.defaultProps = {
   imageFileName: 'noimage.png',
