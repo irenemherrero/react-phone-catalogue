@@ -4,7 +4,8 @@ import tw from 'tailwind.macro'
 import { FaCircleNotch } from 'react-icons/fa'
 
 const LoaderWrapper = styled.div`
-  ${tw`text-secondary mt-20 opacity-75`}
+  ${tw`flex justify-center
+      text-secondary mt-20 opacity-75`}
   svg {
     ${tw`h-16 w-16`} {
       animation: spin 2s linear infinite;

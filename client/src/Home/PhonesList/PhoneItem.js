@@ -1,35 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import styled from 'styled-components'
-import tw from 'tailwind.macro'
 import { AvailableColors } from '@/common/ColorsWrapper'
-
-const ResponsiveContainer = styled.div`
-  ${tw`w-full md:w-1/2 lg:w-1/3 p-2`}
-`
-const PhoneCard = styled.div`
-  ${tw`flex flex-row shadow-md bg-white cursor-pointer
-      h-48 max-w-xs mx-auto 
-      hover:shadow-xl`}
-  &:hover {
-    transform: scale(1.05);
-  }
-`
-const PhoneCardImage = styled.img`
-  ${tw`w-40`}
-`
-const PhoneCardInfo = styled.section`
-  ${tw`flex flex-col pt-6 w-full`}
-  h1 {
-    ${tw`font-semibold text-xl`}
-  }
-  h2 {
-    ${tw`text-gray-600`}
-  }
-  footer {
-    ${tw`self-end m-6 font-semibold text-secondary text-lg`}
-  }
-`
+import { PhoneImage } from '@/common/PhoneImage'
+import { ResponsiveContainer, PhoneCard, PhoneCardInfo } from './styles'
 
 const PhoneItem = (props) => {
   const { id, name, manufacturer, color, price, imageFileName, onClick } = props
@@ -37,7 +10,7 @@ const PhoneItem = (props) => {
   return (
     <ResponsiveContainer onClick={() => onClick(id)}>
       <PhoneCard>
-        <PhoneCardImage src={urlImage} alt={name} />
+        <PhoneImage src={urlImage} alt={name} />
         <PhoneCardInfo>
           <h1>{name}</h1>
           <h2>{manufacturer}</h2>

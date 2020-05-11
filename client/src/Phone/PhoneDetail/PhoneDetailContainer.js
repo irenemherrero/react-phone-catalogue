@@ -6,17 +6,9 @@ import { PhoneDetail } from './PhoneDetail'
 
 const PhoneDetailContainer = () => {
   const { id } = useParams()
-  const { isFetching, phones } = useSelector((state) => state)
+  const { phones } = useSelector((state) => state)
   const selectedPhone = phones.find((item) => item.id == id)
-  return (
-    <div>
-      {isFetching ? (
-        <span>loading...</span>
-      ) : (
-        <PhoneDetail {...selectedPhone} />
-      )}
-    </div>
-  )
+  return <PhoneDetail {...selectedPhone} />
 }
 
 export { PhoneDetailContainer }

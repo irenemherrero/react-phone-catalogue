@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import { getPhones } from './PhonesListActions'
 import { PhoneList } from './PhonesList'
-import { CenterContentWrapper } from '@/common/CenterContentWrapper'
+import { PageCenterWrapper } from '@/common/PageCenterWrapper'
 import { Loader } from '@/common/Loader'
 
 const PhonesListContainer = () => {
@@ -14,7 +14,7 @@ const PhonesListContainer = () => {
 
   // return <Loader />
   return (
-    <CenterContentWrapper>
+    <PageCenterWrapper>
       {error ? (
         <span>{error}</span>
       ) : isFetching ? (
@@ -22,7 +22,7 @@ const PhonesListContainer = () => {
       ) : (
         <PhoneList phones={phones} />
       )}
-    </CenterContentWrapper>
+    </PageCenterWrapper>
   )
 }
 
