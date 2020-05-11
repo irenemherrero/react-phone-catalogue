@@ -3,8 +3,8 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import tw from 'tailwind.macro'
 import { FaMobileAlt, FaMemory, FaMicrochip } from 'react-icons/fa'
-import { AvailableColors } from '../../common/ColorsWrapper'
-import { CenterContentWrapper } from '../../common/CenterContentWrapper'
+import { AvailableColors } from '@/common/ColorsWrapper'
+import { CenterContentWrapper } from '@/common/CenterContentWrapper'
 
 const PhoneImage = styled.img.attrs({
   className: 'object-cover',
@@ -101,7 +101,7 @@ PhoneDetail.propTypes = {
   imageFileName: PropTypes.string,
   screen: PropTypes.string,
   processor: PropTypes.string,
-  ram: PropTypes.string,
+  ram: PropTypes.number,
 }
 PhoneDetail.defaultProps = {
   manufactured: '',
@@ -111,7 +111,7 @@ PhoneDetail.defaultProps = {
   imageFileName: 'noimage.png',
   screen: 'N/A',
   processor: 'N/A',
-  ram: 'N/A',
+  ram: '0',
 }
 
 export { PhoneDetail }

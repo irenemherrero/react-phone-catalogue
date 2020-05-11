@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import tw from 'tailwind.macro'
-import logo from './../assets/logo.png'
+import logo from '@/assets/logo.png'
 
 const StickyHeader = styled.header`
   ${tw`flex sticky top-0 bg-primary z-50 text-white`}

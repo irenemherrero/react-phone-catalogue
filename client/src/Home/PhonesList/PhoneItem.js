@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import tw from 'tailwind.macro'
-import { AvailableColors } from '../../common/ColorsWrapper'
+import { AvailableColors } from '@/common/ColorsWrapper'
 
 const ResponsiveContainer = styled.div`
   ${tw`w-full md:w-1/2 lg:w-1/3 p-2`}

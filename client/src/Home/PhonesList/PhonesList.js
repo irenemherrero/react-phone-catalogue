@@ -1,7 +1,7 @@
 import React from 'react'
 import { useHistory } from 'react-router-dom'
 import PropTypes from 'prop-types'
-import { CenterContentWrapper } from '../../common/CenterContentWrapper'
+import { CenterContentWrapper } from '@/common/CenterContentWrapper'
 import { PhoneItem } from './PhoneItem'
 import styled from 'styled-components'
 import tw from 'tailwind.macro'
