@@ -2,7 +2,8 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import tw from 'tailwind.macro'
-import { FaMobileAlt, FaMemory, FaMicrochip } from 'react-icons/fa'
+import { useHistory } from 'react-router-dom'
+import { FaMobileAlt, FaMemory, FaMicrochip, FaTimes } from 'react-icons/fa'
 import { AvailableColors } from '@/common/ColorsWrapper'
 import { CenterContentWrapper } from '@/common/CenterContentWrapper'
 
@@ -24,10 +25,17 @@ const PhoneCardInfo = styled.div`
     ${tw`mt-4 font-semibold text-secondary text-xl`}
   }
 `
+const TitleClose = styled.div`
+  ${tw`flex flex-row justify-between`}
+  svg {
+    ${tw`h-6 w-6 text-primary cursor-pointer`}
+  }
+`
+
 const PhoneDescription = styled.div`
   ${tw`px-8 lg:px-56 xl:px-64`}
   h1 {
-    ${tw`font-bold text-2xl`}
+    ${tw`font-semibold text-2xl border-b-2 text-primary border-secondary`}
   }
   p {
     ${tw`text-justify mt-2`}
@@ -59,12 +67,19 @@ const PhoneDetail = (props) => {
     ram,
   } = props
   const urlImage = process.env.PHONES_IMAGES_URL + imageFileName
+  const history = useHistory()
+  const goHome = () => {
+    history.push('/')
+  }
   return (
     <div>
       <CenterContentWrapper>
         <PhoneImage src={urlImage} alt={name} />
         <PhoneCardInfo>
-          <h1>{name}</h1>
+          <TitleClose>
+            <h1>{name}</h1>
+            <FaTimes onClick={() => goHome()} />
+          </TitleClose>
           <h2>{manufacturer}</h2>
           <SpecsContainer>
             <Spec>

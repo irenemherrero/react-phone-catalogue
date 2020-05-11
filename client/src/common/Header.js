@@ -5,10 +5,10 @@ import tw from 'tailwind.macro'
 import logo from '@/assets/logo.png'
 
 const StickyHeader = styled.header`
-  ${tw`flex sticky top-0 bg-primary z-50 text-white`}
+  ${tw`flex sticky top-0 bg-primary z-50 text-white p-3`}
 `
 const Logo = styled.div`
-  ${tw`flex items-center p-3`}
+  ${tw`flex items-center`}
   img {
     ${tw`w-10 mr-4`}
   }
@@ -17,9 +17,11 @@ const Logo = styled.div`
   }
 `
 const Title = styled.div`
-  ${tw`p-3 absolute w-full text-center 
-    font-semibold tracking-wider text-2xl
-    hidden md:block`}
+  ${tw`hidden md:block w-full
+    text-center absolute`}
+  h1 {
+    ${tw`font-semibold tracking-wider text-2xl`}
+  }
 `
 const Header = (props) => {
   const { title } = props
@@ -29,7 +31,9 @@ const Header = (props) => {
         <img src={logo} />
         <span>GS Phones</span>
       </Logo>
-      <Title>{title}</Title>
+      <Title>
+        <h1>{title}</h1>
+      </Title>
     </StickyHeader>
   )
 }
