@@ -1,0 +1,18 @@
+version: '3'
+services:
+  client:
+    container_name: jgphones_app
+    build:
+      context: ./client
+      dockerfile: Dockerfile
+    image: jgphones:client
+    ports:
+      - 8000:80
+  server:
+    container_name: jgphones_api
+    build:
+      context: ./server
+      dockerfile: Dockerfile
+    image: jgphones:server
+    ports:
+      - 5000:5000

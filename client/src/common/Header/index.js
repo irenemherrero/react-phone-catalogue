@@ -1,6 +1,5 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import logo from '@/assets/logo.png'
 import { StickyHeader, Logo, Title } from './styles'
 
 const Header = (props) => {
