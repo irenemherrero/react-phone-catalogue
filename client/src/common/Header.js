@@ -17,7 +17,9 @@ const Logo = styled.div`
   }
 `
 const Title = styled.div`
-  ${tw`p-3 w-full absolute text-center font-semibold tracking-wider text-2xl`}
+  ${tw`p-3 absolute w-full text-center 
+    font-semibold tracking-wider text-2xl
+    hidden md:block`}
 `
 const Header = (props) => {
   const { title } = props
@@ -25,7 +27,7 @@ const Header = (props) => {
     <StickyHeader>
       <Logo>
         <img src={logo} />
-        <span>JGL Phones</span>
+        <span>GS Phones</span>
       </Logo>
       <Title>{title}</Title>
     </StickyHeader>
