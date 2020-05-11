@@ -5,17 +5,16 @@ import tw from 'tailwind.macro'
 import { AvailableColors } from '../../common/ColorsWrapper'
 
 const ResponsiveContainer = styled.div`
-  ${tw`w-full md:w-1/2 lg:w-1/3 px-2 my-2`}
+  ${tw`w-full md:w-1/2 lg:w-1/3 p-2`}
 `
-
-//TODO min-width
 const PhoneCard = styled.div`
-  ${tw`flex flex-row shadow-md bg-white cursor-pointer hover:shadow-xl h-48`}
+  ${tw`flex flex-row shadow-md bg-white cursor-pointer
+      h-48 max-w-xs mx-auto 
+      hover:shadow-xl`}
   &:hover {
     transform: scale(1.05);
   }
 `
-
 const PhoneCardImage = styled.img`
   ${tw`w-40`}
 `
