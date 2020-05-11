@@ -1,7 +1,5 @@
-import React from 'react'
 import styled from 'styled-components'
 import tw from 'tailwind.macro'
-import { FaCircleNotch } from 'react-icons/fa'
 
 const LoaderWrapper = styled.div`
   ${tw`flex justify-center
@@ -18,12 +16,4 @@ const LoaderWrapper = styled.div`
   }
 `
 
-const Loader = () => {
-  return (
-    <LoaderWrapper>
-      <FaCircleNotch />
-    </LoaderWrapper>
-  )
-}
-
-export { Loader }
+export { LoaderWrapper }

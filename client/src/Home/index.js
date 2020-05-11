@@ -1,6 +1,6 @@
 import React from 'react'
 import { PhonesListContainer } from './PhonesList/PhonesListContainer'
-import { Header } from '@/common/Header'
+import { Header } from '@/common'
 
 const Home = () => {
   return (

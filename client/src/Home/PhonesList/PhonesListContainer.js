@@ -2,8 +2,7 @@ import React, { useEffect } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import { getPhones } from './PhonesListActions'
 import { PhoneList } from './PhonesList'
-import { PageCenterWrapper } from '@/common/PageCenterWrapper'
-import { Loader } from '@/common/Loader'
+import { PageCenterWrapper, Loader } from '@/common'
 
 const PhonesListContainer = () => {
   const { isFetching, phones, error } = useSelector((state) => state)

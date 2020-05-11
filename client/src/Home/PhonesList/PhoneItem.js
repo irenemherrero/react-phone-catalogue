@@ -1,7 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { AvailableColors } from '@/common/ColorsWrapper'
-import { PhoneImage } from '@/common/PhoneImage'
+import { AvailableColors, PhoneImage } from '@/common'
 import { ResponsiveContainer, PhoneCard, PhoneCardInfo } from './styles'
 
 const PhoneItem = (props) => {

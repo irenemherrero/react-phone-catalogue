@@ -2,8 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { useHistory } from 'react-router-dom'
 import { FaMobileAlt, FaMemory, FaMicrochip, FaTimes } from 'react-icons/fa'
-import { AvailableColors } from '@/common/ColorsWrapper'
-import { PhoneImage } from '@/common/PhoneImage'
+import { AvailableColors, PhoneImage } from '@/common'
 
 import {
   DetailWrapper,
