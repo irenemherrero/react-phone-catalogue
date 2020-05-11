@@ -4,12 +4,12 @@ import logo from '@/assets/logo.png'
 import { StickyHeader, Logo, Title } from './styles'
 
 const Header = (props) => {
-  const { title } = props
+  const { title, logoImg, logoText } = props
   return (
     <StickyHeader>
       <Logo>
-        <img src={logo} />
-        <span>GS Phones</span>
+        <img src={logoImg} />
+        <span>{logoText}</span>
       </Logo>
       <Title>
         <h1>{title}</h1>
@@ -20,6 +20,8 @@ const Header = (props) => {
 
 Header.propTypes = {
   title: PropTypes.string,
+  logoImg: PropTypes.string,
+  logoText: PropTypes.string,
 }
 Header.defaultProps = {
   title: '',

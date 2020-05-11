@@ -19,7 +19,7 @@ const rules = [
   },
   {
     test: /\.(png|svg|jpg|jpeg|gif)$/,
-    use: ['file-loader'],
+    loader: 'file-loader',
   },
 ]
 
