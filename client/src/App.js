@@ -10,12 +10,8 @@ const App = () => {
     <Router>
       <Header logoImg={logo} logoText="GS Phones" title="Phones Store" />
       <Switch>
-        <Route path="/phone/:id">
-          <Phone />
-        </Route>
-        <Route path="/" exact>
-          <Home />
-        </Route>
+        <Route exact path="/" component={Home} />
+        <Route exact path="/phone/:id" component={Phone} />
       </Switch>
     </Router>
   )

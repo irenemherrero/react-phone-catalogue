@@ -28,6 +28,7 @@ module.exports = (env, { mode }) => ({
   output: {
     filename: 'app.[hash].js',
     path: path.resolve(__dirname, './build'),
+    publicPath: '/',
   },
   module: { rules: [JSConfig, CSSConfig, FileConfig] },
   plugins: [
@@ -46,5 +47,10 @@ module.exports = (env, { mode }) => ({
     splitChunks: {
       chunks: 'all',
     },
+  },
+  devServer: {
+    historyApiFallback: true,
+    hot: true,
+    port: 9000,
   },
 })
