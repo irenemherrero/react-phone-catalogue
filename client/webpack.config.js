@@ -6,10 +6,6 @@ const JSConfig = {
   test: /\.(js|jsx)$/,
   exclude: /node_modules/,
   loader: 'babel-loader',
-  options: {
-    presets: ['@babel/preset-env', '@babel/preset-react'],
-    plugins: ['macros'],
-  },
 }
 
 const CSSConfig = {
@@ -36,13 +32,9 @@ module.exports = (env, { mode }) => ({
       title: 'JGL Phones',
       template: './public/index.html',
     }),
+    // new webpack.HotModuleReplacementPlugin(),
     new Dotenv(),
   ],
-  resolve: {
-    alias: {
-      '@': path.resolve(__dirname, 'src'),
-    },
-  },
   optimization: {
     splitChunks: {
       chunks: 'all',
