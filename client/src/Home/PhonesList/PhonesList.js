@@ -10,7 +10,11 @@ const ItemsWrapper = styled.div`
        py-2 px-0 sm:px-8 
        max-w-6xl`}
 `
-const PhoneList = (props) => {
+/**
+ * Component for showing list of phones
+ * @component
+ */
+const PhonesList = (props) => {
   const { phones } = props
   const history = useHistory()
   const showDetail = (id) => {
@@ -25,8 +29,11 @@ const PhoneList = (props) => {
   )
 }
 
-PhoneList.propTypes = {
+PhonesList.propTypes = {
+  /**
+   * list of phones
+   */
   phones: PropTypes.array.isRequired,
 }
 
-export { PhoneList }
+export { PhonesList }

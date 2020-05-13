@@ -2,6 +2,10 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { ColorsWrapper, SpanColor } from './styles'
 
+/**
+ * Showing boxes color
+ * @component
+ */
 const AvailableColors = (props) => {
   const { colors } = props
   return (

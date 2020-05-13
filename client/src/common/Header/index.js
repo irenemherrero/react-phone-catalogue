@@ -2,6 +2,10 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { StickyHeader, Logo, Title } from './styles'
 
+/**
+ * Configurable page Header
+ * @component
+ */
 const Header = (props) => {
   const { title, logoImg, logoText } = props
   return (

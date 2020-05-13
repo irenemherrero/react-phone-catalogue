@@ -1,4 +1,4 @@
-import { fetchPhones } from '@/services/phonesService'
+import { fetchPhones } from '../../services/phonesService'
 
 export const ERROR_FETCHING = 'ERROR_FETCHING'
 export const REQUEST_PHONES = 'REQUEST_PHONES'
@@ -21,8 +21,11 @@ export const errorFetching = (error) => ({
 export const getPhones = (dispatch) => {
   dispatch(requestPhones())
   return fetchPhones()
-    .then((data) => {
-      dispatch(receivePhones(data))
+    .then((res) => {
+      console.log(res)
+      dispatch(receivePhones(res.data))
     })
-    .catch((err) => dispatch(errorFetching(err)))
+    .catch((err) => {
+      dispatch(errorFetching(err.message))
+    })
 }

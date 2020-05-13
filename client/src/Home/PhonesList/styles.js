@@ -1,9 +1,16 @@
 import styled from 'styled-components'
 import tw from 'tailwind.macro'
 
-const ResponsiveContainer = styled.div`
+/**
+ * Responsive num cols wrapper
+ */
+const ResponsiveWrapper = styled.div`
   ${tw`w-full md:w-1/2 lg:w-1/3 p-2`}
 `
+
+/**
+ * Card for show phone
+ */
 const PhoneCard = styled.div`
   ${tw`flex flex-row shadow-md bg-white cursor-pointer
       h-48 max-w-xs mx-auto 
@@ -13,6 +20,9 @@ const PhoneCard = styled.div`
   }
 `
 
+/**
+ * Info wrapper
+ */
 const PhoneCardInfo = styled.section`
   ${tw`flex flex-col pt-6 w-full`}
   h1 {
@@ -26,4 +36,4 @@ const PhoneCardInfo = styled.section`
   }
 `
 
-export { ResponsiveContainer, PhoneCard, PhoneCardInfo }
+export { ResponsiveWrapper, PhoneCard, PhoneCardInfo }

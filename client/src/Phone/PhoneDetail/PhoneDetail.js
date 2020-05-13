@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { useHistory } from 'react-router-dom'
 import { FaMobileAlt, FaMemory, FaMicrochip, FaTimes } from 'react-icons/fa'
-import { AvailableColors, PhoneImage } from '@/common'
+import { AvailableColors, PhoneImage } from '../../common'
 
 import {
   DetailWrapper,
@@ -13,6 +13,10 @@ import {
   Spec,
 } from './styles'
 
+/**
+ * Showing phone detail
+ * @component
+ */
 const PhoneDetail = (props) => {
   const {
     name,
@@ -70,6 +74,7 @@ PhoneDetail.propTypes = {
   name: PropTypes.string.isRequired,
   manufacturer: PropTypes.string,
   description: PropTypes.string,
+  /**comma separated colors */
   color: PropTypes.string,
   price: PropTypes.number,
   imageFileName: PropTypes.string,

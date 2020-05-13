@@ -1,7 +1,13 @@
+import axios from 'axios'
+
 const url = process.env.PHONES_API_URL
 
+/**
+ * Get phones from API
+ * @returns {Promise}
+ */
 const fetchPhones = () => {
-  return fetch(url).then((res) => res.json())
+  return axios.get(url)
 }
 
 export { fetchPhones }
