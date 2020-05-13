@@ -1,25 +1,30 @@
 import React, { useEffect } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import { getPhones } from './PhonesListActions'
-import { PhoneList } from './PhonesList'
-import { PageCenterWrapper, Loader } from '@/common'
+import { PhonesList } from './PhonesList'
+import { PageCenterWrapper, Loader, Error } from '../../common'
 
+/**
+ * Functional container for phones list
+ * @component
+ */
 const PhonesListContainer = () => {
   const { isFetching, phones, error } = useSelector((state) => state)
   const dispatch = useDispatch()
   useEffect(() => {
+    console.log(error)
     getPhones(dispatch)
   }, [])
 
   // return <Loader />
   return (
     <PageCenterWrapper>
-      {error ? (
-        <span>{error}</span>
-      ) : isFetching ? (
+      {isFetching ? (
         <Loader />
+      ) : error !== null ? (
+        <Error>{error}</Error>
       ) : (
-        <PhoneList phones={phones} />
+        <PhonesList phones={phones} />
       )}
     </PageCenterWrapper>
   )
