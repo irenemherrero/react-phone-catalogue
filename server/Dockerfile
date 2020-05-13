@@ -1,4 +1,3 @@
-# pull official base image
 FROM node:alpine as server-build
 WORKDIR /server
 COPY . ./

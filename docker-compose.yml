@@ -4,6 +4,7 @@ services:
     container_name: jgphones_app
     build:
       context: ./client
+      depends_on: server
       dockerfile: Dockerfile
     image: jgphones:client
     ports:

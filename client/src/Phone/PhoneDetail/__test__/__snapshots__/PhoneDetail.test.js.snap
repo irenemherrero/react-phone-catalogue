@@ -8,6 +8,7 @@ Object {
       <div>
         <div
           class="sc-fzoLsD bCKUm"
+          data-testid="phone-detail"
         >
           <img
             alt="iPhone 7"
@@ -24,6 +25,7 @@ Object {
                 iPhone 7
               </h1>
               <svg
+                data-testid="close-detail"
                 fill="currentColor"
                 height="1em"
                 stroke="currentColor"
@@ -140,6 +142,7 @@ Object {
     <div>
       <div
         class="sc-fzoLsD bCKUm"
+        data-testid="phone-detail"
       >
         <img
           alt="iPhone 7"
@@ -156,6 +159,7 @@ Object {
               iPhone 7
             </h1>
             <svg
+              data-testid="close-detail"
               fill="currentColor"
               height="1em"
               stroke="currentColor"

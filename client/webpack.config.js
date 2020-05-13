@@ -19,20 +19,20 @@ const FileConfig = {
   loader: 'file-loader',
 }
 
-module.exports = (env, { mode }) => ({
+module.exports = () => ({
   entry: path.join(__dirname, 'src', 'index.js'),
   output: {
     filename: 'app.[hash].js',
     path: path.resolve(__dirname, './build'),
     publicPath: '/',
   },
+  devtool: 'source-map',
   module: { rules: [JSConfig, CSSConfig, FileConfig] },
   plugins: [
     new HtmlWebpackPlugin({
       title: 'JGL Phones',
       template: './public/index.html',
     }),
-    // new webpack.HotModuleReplacementPlugin(),
     new Dotenv(),
   ],
   optimization: {

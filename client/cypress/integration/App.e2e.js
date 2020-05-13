@@ -4,7 +4,7 @@ beforeEach(() => {
   cy.route('**/phones', '@phones').as('getPhones')
   cy.route('**/images/*', 'fx:phone_image.png').as('getPhoneImage')
 })
-describe('App navigation complete', () => {
+describe('App complete navigation', () => {
   it('should have a header and main', () => {
     cy.visit('/')
     cy.get('header').should('exist')

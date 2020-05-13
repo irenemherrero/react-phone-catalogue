@@ -10,6 +10,7 @@ Object {
       >
         <div
           class="sc-fzoLsD hpPURA"
+          data-testid="phone-item"
         >
           <div
             class="sc-fzpans gnBuKW"
@@ -48,6 +49,7 @@ Object {
         </div>
         <div
           class="sc-fzoLsD hpPURA"
+          data-testid="phone-item"
         >
           <div
             class="sc-fzpans gnBuKW"
@@ -90,6 +92,7 @@ Object {
         </div>
         <div
           class="sc-fzoLsD hpPURA"
+          data-testid="phone-item"
         >
           <div
             class="sc-fzpans gnBuKW"
@@ -135,6 +138,7 @@ Object {
     >
       <div
         class="sc-fzoLsD hpPURA"
+        data-testid="phone-item"
       >
         <div
           class="sc-fzpans gnBuKW"
@@ -173,6 +177,7 @@ Object {
       </div>
       <div
         class="sc-fzoLsD hpPURA"
+        data-testid="phone-item"
       >
         <div
           class="sc-fzpans gnBuKW"
@@ -215,6 +220,7 @@ Object {
       </div>
       <div
         class="sc-fzoLsD hpPURA"
+        data-testid="phone-item"
       >
         <div
           class="sc-fzpans gnBuKW"
