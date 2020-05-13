@@ -28,13 +28,13 @@ describe('PhoneItem (a child of PhonesList)', () => {
   })
   it('check default values', () => {
     const { getByText } = render(<PhoneItem {...mockRequiredPhone} />)
-    const Name = getByText(mockRequiredPhone.name)
-    const Manufacturer = getByText(PhoneItem.defaultProps.manufacturer)
-    const Price = getByText(`${PhoneItem.defaultProps.price} €`)
+    const name = getByText(mockRequiredPhone.name)
+    const manufacturer = getByText(PhoneItem.defaultProps.manufacturer)
+    const price = getByText(`${PhoneItem.defaultProps.price} €`)
 
-    expect(Name).toBeTruthy()
-    expect(Manufacturer).toBeTruthy()
-    expect(Price).toBeTruthy()
+    expect(name).toBeTruthy()
+    expect(manufacturer).toBeTruthy()
+    expect(price).toBeTruthy()
   })
   it('click on phone', () => {
     const clickMock = jest.fn()

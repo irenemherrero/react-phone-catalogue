@@ -6,13 +6,13 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="sc-fzplWN dYqHOa"
+        class="sc-fznyAO PEzBG"
       >
         <div
-          class="sc-fzozJi SWbVy"
+          class="sc-fzoLsD hpPURA"
         >
           <div
-            class="sc-fzoLsD bjHBzu"
+            class="sc-fzpans gnBuKW"
           >
             <img
               alt="iPhone 7"
@@ -20,7 +20,7 @@ Object {
               src="undefinedIPhone_7.png"
             />
             <section
-              class="sc-fzpans jtdzVu"
+              class="sc-fzplWN DAXdT"
             >
               <h1>
                 iPhone 7
@@ -47,10 +47,10 @@ Object {
           </div>
         </div>
         <div
-          class="sc-fzozJi SWbVy"
+          class="sc-fzoLsD hpPURA"
         >
           <div
-            class="sc-fzoLsD bjHBzu"
+            class="sc-fzpans gnBuKW"
           >
             <img
               alt="Galaxy S7"
@@ -58,7 +58,7 @@ Object {
               src="undefinedGalaxy_S7.png"
             />
             <section
-              class="sc-fzpans jtdzVu"
+              class="sc-fzplWN DAXdT"
             >
               <h1>
                 Galaxy S7
@@ -89,10 +89,10 @@ Object {
           </div>
         </div>
         <div
-          class="sc-fzozJi SWbVy"
+          class="sc-fzoLsD hpPURA"
         >
           <div
-            class="sc-fzoLsD bjHBzu"
+            class="sc-fzpans gnBuKW"
           >
             <img
               alt="Honor 10"
@@ -100,7 +100,7 @@ Object {
               src="undefinedHonor_10.png"
             />
             <section
-              class="sc-fzpans jtdzVu"
+              class="sc-fzplWN DAXdT"
             >
               <h1>
                 Honor 10
@@ -131,13 +131,13 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="sc-fzplWN dYqHOa"
+      class="sc-fznyAO PEzBG"
     >
       <div
-        class="sc-fzozJi SWbVy"
+        class="sc-fzoLsD hpPURA"
       >
         <div
-          class="sc-fzoLsD bjHBzu"
+          class="sc-fzpans gnBuKW"
         >
           <img
             alt="iPhone 7"
@@ -145,7 +145,7 @@ Object {
             src="undefinedIPhone_7.png"
           />
           <section
-            class="sc-fzpans jtdzVu"
+            class="sc-fzplWN DAXdT"
           >
             <h1>
               iPhone 7
@@ -172,10 +172,10 @@ Object {
         </div>
       </div>
       <div
-        class="sc-fzozJi SWbVy"
+        class="sc-fzoLsD hpPURA"
       >
         <div
-          class="sc-fzoLsD bjHBzu"
+          class="sc-fzpans gnBuKW"
         >
           <img
             alt="Galaxy S7"
@@ -183,7 +183,7 @@ Object {
             src="undefinedGalaxy_S7.png"
           />
           <section
-            class="sc-fzpans jtdzVu"
+            class="sc-fzplWN DAXdT"
           >
             <h1>
               Galaxy S7
@@ -214,10 +214,10 @@ Object {
         </div>
       </div>
       <div
-        class="sc-fzozJi SWbVy"
+        class="sc-fzoLsD hpPURA"
       >
         <div
-          class="sc-fzoLsD bjHBzu"
+          class="sc-fzpans gnBuKW"
         >
           <img
             alt="Honor 10"
@@ -225,7 +225,7 @@ Object {
             src="undefinedHonor_10.png"
           />
           <section
-            class="sc-fzpans jtdzVu"
+            class="sc-fzplWN DAXdT"
           >
             <h1>
               Honor 10

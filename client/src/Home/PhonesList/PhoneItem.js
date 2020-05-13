@@ -11,7 +11,7 @@ const PhoneItem = (props) => {
   const { id, name, manufacturer, color, price, imageFileName, onClick } = props
   const urlImage = process.env.PHONES_IMAGES_URL + imageFileName
   return (
-    <ResponsiveWrapper onClick={() => onClick(id)}>
+    <ResponsiveWrapper data-testid="phone-item" onClick={() => onClick(id)}>
       <PhoneCard>
         <PhoneImage src={urlImage} alt={name} />
         <PhoneCardInfo>

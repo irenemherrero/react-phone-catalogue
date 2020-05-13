@@ -36,12 +36,12 @@ const PhoneDetail = (props) => {
   }
   return (
     <div>
-      <DetailWrapper>
+      <DetailWrapper data-testid="phone-detail">
         <PhoneImage src={urlImage} alt={name} />
         <PhoneCardInfo>
           <TitleClose>
             <h1>{name}</h1>
-            <FaTimes onClick={() => goHome()} />
+            <FaTimes onClick={() => goHome()} data-testid="close-detail" />
           </TitleClose>
           <h2>{manufacturer}</h2>
           <SpecsContainer>

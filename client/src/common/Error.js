@@ -4,8 +4,7 @@ import tw from 'tailwind.macro'
 /**
  * Showing a error message
  */
-const Error = styled.span`
-  ${tw`mt-6 text-red-500 font-size-xl font-bold`}
+const Error = styled.div`
+  ${tw`mt-6 border border-red-400 rounded bg-red-100 px-4 py-3 text-red-700`}
 `
-
 export { Error }
