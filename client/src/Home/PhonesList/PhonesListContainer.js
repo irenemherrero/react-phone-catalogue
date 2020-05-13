@@ -12,7 +12,6 @@ const PhonesListContainer = () => {
   const { isFetching, phones, error } = useSelector((state) => state)
   const dispatch = useDispatch()
   useEffect(() => {
-    console.log(error)
     getPhones(dispatch)
   }, [])
 

@@ -21,11 +21,6 @@ export const errorFetching = (error) => ({
 export const getPhones = (dispatch) => {
   dispatch(requestPhones())
   return fetchPhones()
-    .then((res) => {
-      console.log(res)
-      dispatch(receivePhones(res.data))
-    })
-    .catch((err) => {
-      dispatch(errorFetching(err.message))
-    })
+    .then((res) => dispatch(receivePhones(res.data)))
+    .catch((err) => dispatch(errorFetching(err.message)))
 }
