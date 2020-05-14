@@ -30,8 +30,9 @@ module.exports = () => ({
   module: { rules: [JSConfig, CSSConfig, FileConfig] },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'JGL Phones',
+      title: 'GS Phones',
       template: './public/index.html',
+      favicon: './public/favicon.ico',
     }),
     new Dotenv(),
   ],
