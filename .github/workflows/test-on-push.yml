@@ -3,7 +3,6 @@ on:
   push:
     paths:
       - 'client/src/**'
-      - 'server/**.js'
 jobs:
   build:
     runs-on: ubuntu-latest
