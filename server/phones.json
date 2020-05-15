@@ -94,5 +94,17 @@
     "screen": "5,7 inch Full-HD",
     "processor": "Snapdragon 450",
     "ram": 3
+  },
+  {
+    "id": 8,
+    "name": "Reno 2",
+    "manufacturer": "Oppo",
+    "description": "Creates dream-like images with Dual Lens Bokeh. The dual front camera algorithm achieves a binocular bokeh effect, producing sharper edges and background gradients.",
+    "color": "black,blue,darkgreen",
+    "price": 499,
+    "imageFileName": "Oppo_Reno2.jpg",
+    "screen": "6,55 inch AMOLED",
+    "processor": "Snapdragon 730G",
+    "ram": 8
   }
 ]

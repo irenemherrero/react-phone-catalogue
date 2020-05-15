@@ -2,8 +2,8 @@ import styled from 'styled-components'
 import tw from 'tailwind.macro'
 
 const LoaderWrapper = styled.div`
-  ${tw`flex justify-center
-      text-secondary mt-20 opacity-75`}
+  ${tw`flex items-center
+      text-secondary opacity-75 h-screen`}
   svg {
     ${tw`h-16 w-16`} {
       animation: spin 2s linear infinite;

@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import { getPhones } from './PhonesListActions'
 import { PhonesList } from './PhonesList'
-import { PageCenterWrapper, Loader, Error } from '../../common'
+import { PageCenterWrapper, GifLoader, Error } from '../../common'
 
 /**
  * Functional container for phones list
@@ -19,7 +19,7 @@ const PhonesListContainer = () => {
   return (
     <PageCenterWrapper>
       {isFetching ? (
-        <Loader />
+        <GifLoader />
       ) : error !== null ? (
         <Error>{error}</Error>
       ) : (
