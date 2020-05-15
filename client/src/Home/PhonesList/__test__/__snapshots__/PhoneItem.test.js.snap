@@ -6,19 +6,19 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="sc-fzoLsD hpPURA"
+        class="sc-fzpans gChbGE"
         data-testid="phone-item"
       >
         <div
-          class="sc-fzpans gnBuKW"
+          class="sc-fzplWN gcxpTv"
         >
           <img
             alt="iPhone 7"
-            class="sc-Axmtr cFtcXX object-cover"
+            class="sc-AxmLO sVFpK object-cover"
             src="undefinedIPhone_7.png"
           />
           <section
-            class="sc-fzplWN DAXdT"
+            class="sc-fznyAO lnNTzH"
           >
             <h1>
               iPhone 7
@@ -48,19 +48,19 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="sc-fzoLsD hpPURA"
+      class="sc-fzpans gChbGE"
       data-testid="phone-item"
     >
       <div
-        class="sc-fzpans gnBuKW"
+        class="sc-fzplWN gcxpTv"
       >
         <img
           alt="iPhone 7"
-          class="sc-Axmtr cFtcXX object-cover"
+          class="sc-AxmLO sVFpK object-cover"
           src="undefinedIPhone_7.png"
         />
         <section
-          class="sc-fzplWN DAXdT"
+          class="sc-fznyAO lnNTzH"
         >
           <h1>
             iPhone 7

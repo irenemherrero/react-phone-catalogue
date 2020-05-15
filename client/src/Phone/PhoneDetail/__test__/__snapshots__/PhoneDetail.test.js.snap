@@ -7,19 +7,19 @@ Object {
     <div>
       <div>
         <div
-          class="sc-fzoLsD bCKUm"
+          class="sc-fzpans ciFOhq"
           data-testid="phone-detail"
         >
           <img
             alt="iPhone 7"
-            class="sc-Axmtr cFtcXX object-cover"
+            class="sc-AxmLO sVFpK object-cover"
             src="undefinedIPhone_7.png"
           />
           <div
-            class="sc-fzpans KlNdT"
+            class="sc-fzplWN jpcjYy"
           >
             <div
-              class="sc-fzplWN gfObLF"
+              class="sc-fznyAO eXpdbl"
             >
               <h1>
                 iPhone 7
@@ -43,10 +43,10 @@ Object {
               Apple
             </h2>
             <div
-              class="sc-fznKkj gTLDyv"
+              class="sc-fznZeY fmxXlD"
             >
               <div
-                class="sc-fznZeY cfIPFi"
+                class="sc-fzokOt gUdfZh"
               >
                 <svg
                   fill="currentColor"
@@ -66,7 +66,7 @@ Object {
                 </span>
               </div>
               <div
-                class="sc-fznZeY cfIPFi"
+                class="sc-fzokOt gUdfZh"
               >
                 <svg
                   fill="currentColor"
@@ -86,7 +86,7 @@ Object {
                 </span>
               </div>
               <div
-                class="sc-fznZeY cfIPFi"
+                class="sc-fzokOt gUdfZh"
               >
                 <svg
                   fill="currentColor"
@@ -126,7 +126,7 @@ Object {
           </div>
         </div>
         <div
-          class="sc-fznyAO fUvvwN"
+          class="sc-fznKkj eVIEPE"
         >
           <h1>
             Description
@@ -141,19 +141,19 @@ Object {
   "container": <div>
     <div>
       <div
-        class="sc-fzoLsD bCKUm"
+        class="sc-fzpans ciFOhq"
         data-testid="phone-detail"
       >
         <img
           alt="iPhone 7"
-          class="sc-Axmtr cFtcXX object-cover"
+          class="sc-AxmLO sVFpK object-cover"
           src="undefinedIPhone_7.png"
         />
         <div
-          class="sc-fzpans KlNdT"
+          class="sc-fzplWN jpcjYy"
         >
           <div
-            class="sc-fzplWN gfObLF"
+            class="sc-fznyAO eXpdbl"
           >
             <h1>
               iPhone 7
@@ -177,10 +177,10 @@ Object {
             Apple
           </h2>
           <div
-            class="sc-fznKkj gTLDyv"
+            class="sc-fznZeY fmxXlD"
           >
             <div
-              class="sc-fznZeY cfIPFi"
+              class="sc-fzokOt gUdfZh"
             >
               <svg
                 fill="currentColor"
@@ -200,7 +200,7 @@ Object {
               </span>
             </div>
             <div
-              class="sc-fznZeY cfIPFi"
+              class="sc-fzokOt gUdfZh"
             >
               <svg
                 fill="currentColor"
@@ -220,7 +220,7 @@ Object {
               </span>
             </div>
             <div
-              class="sc-fznZeY cfIPFi"
+              class="sc-fzokOt gUdfZh"
             >
               <svg
                 fill="currentColor"
@@ -260,7 +260,7 @@ Object {
         </div>
       </div>
       <div
-        class="sc-fznyAO fUvvwN"
+        class="sc-fznKkj eVIEPE"
       >
         <h1>
           Description

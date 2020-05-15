@@ -6,22 +6,22 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="sc-fznyAO PEzBG"
+        class="sc-fznKkj gPEisP"
       >
         <div
-          class="sc-fzoLsD hpPURA"
+          class="sc-fzpans gChbGE"
           data-testid="phone-item"
         >
           <div
-            class="sc-fzpans gnBuKW"
+            class="sc-fzplWN gcxpTv"
           >
             <img
               alt="iPhone 7"
-              class="sc-Axmtr cFtcXX object-cover"
+              class="sc-AxmLO sVFpK object-cover"
               src="undefinedIPhone_7.png"
             />
             <section
-              class="sc-fzplWN DAXdT"
+              class="sc-fznyAO lnNTzH"
             >
               <h1>
                 iPhone 7
@@ -48,19 +48,19 @@ Object {
           </div>
         </div>
         <div
-          class="sc-fzoLsD hpPURA"
+          class="sc-fzpans gChbGE"
           data-testid="phone-item"
         >
           <div
-            class="sc-fzpans gnBuKW"
+            class="sc-fzplWN gcxpTv"
           >
             <img
               alt="Galaxy S7"
-              class="sc-Axmtr cFtcXX object-cover"
+              class="sc-AxmLO sVFpK object-cover"
               src="undefinedGalaxy_S7.png"
             />
             <section
-              class="sc-fzplWN DAXdT"
+              class="sc-fznyAO lnNTzH"
             >
               <h1>
                 Galaxy S7
@@ -91,19 +91,19 @@ Object {
           </div>
         </div>
         <div
-          class="sc-fzoLsD hpPURA"
+          class="sc-fzpans gChbGE"
           data-testid="phone-item"
         >
           <div
-            class="sc-fzpans gnBuKW"
+            class="sc-fzplWN gcxpTv"
           >
             <img
               alt="Honor 10"
-              class="sc-Axmtr cFtcXX object-cover"
+              class="sc-AxmLO sVFpK object-cover"
               src="undefinedHonor_10.png"
             />
             <section
-              class="sc-fzplWN DAXdT"
+              class="sc-fznyAO lnNTzH"
             >
               <h1>
                 Honor 10
@@ -134,22 +134,22 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="sc-fznyAO PEzBG"
+      class="sc-fznKkj gPEisP"
     >
       <div
-        class="sc-fzoLsD hpPURA"
+        class="sc-fzpans gChbGE"
         data-testid="phone-item"
       >
         <div
-          class="sc-fzpans gnBuKW"
+          class="sc-fzplWN gcxpTv"
         >
           <img
             alt="iPhone 7"
-            class="sc-Axmtr cFtcXX object-cover"
+            class="sc-AxmLO sVFpK object-cover"
             src="undefinedIPhone_7.png"
           />
           <section
-            class="sc-fzplWN DAXdT"
+            class="sc-fznyAO lnNTzH"
           >
             <h1>
               iPhone 7
@@ -176,19 +176,19 @@ Object {
         </div>
       </div>
       <div
-        class="sc-fzoLsD hpPURA"
+        class="sc-fzpans gChbGE"
         data-testid="phone-item"
       >
         <div
-          class="sc-fzpans gnBuKW"
+          class="sc-fzplWN gcxpTv"
         >
           <img
             alt="Galaxy S7"
-            class="sc-Axmtr cFtcXX object-cover"
+            class="sc-AxmLO sVFpK object-cover"
             src="undefinedGalaxy_S7.png"
           />
           <section
-            class="sc-fzplWN DAXdT"
+            class="sc-fznyAO lnNTzH"
           >
             <h1>
               Galaxy S7
@@ -219,19 +219,19 @@ Object {
         </div>
       </div>
       <div
-        class="sc-fzoLsD hpPURA"
+        class="sc-fzpans gChbGE"
         data-testid="phone-item"
       >
         <div
-          class="sc-fzpans gnBuKW"
+          class="sc-fzplWN gcxpTv"
         >
           <img
             alt="Honor 10"
-            class="sc-Axmtr cFtcXX object-cover"
+            class="sc-AxmLO sVFpK object-cover"
             src="undefinedHonor_10.png"
           />
           <section
-            class="sc-fzplWN DAXdT"
+            class="sc-fznyAO lnNTzH"
           >
             <h1>
               Honor 10

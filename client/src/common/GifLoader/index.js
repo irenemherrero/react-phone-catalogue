@@ -1,15 +1,15 @@
 import React from 'react'
 import { LoaderWrapper } from './styles'
-import loading from '../../assets/loading.gif'
 
 /**
  * Showing loading animation
  * @component
  */
-const GifLoader = () => {
+const GifLoader = (props) => {
+  const { gif } = props
   return (
     <LoaderWrapper>
-      <img src={loading} />
+      <img src={gif} />
     </LoaderWrapper>
   )
 }
