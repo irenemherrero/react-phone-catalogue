@@ -1,0 +1,11 @@
+name: GS Phones Test
+on: [push]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install Dependencies
+        run: yarn install
+      - name: Pass tests
+        run: yarn workspace client test
