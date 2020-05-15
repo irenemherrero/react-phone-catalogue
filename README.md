@@ -8,19 +8,19 @@ It's a GuideSmiths React code challenge
 
 The code are divided in two workspaces: server and client.
 
-- _Server_: contains backend code. I've used Node with Express to build an REST API for serve data (phones and images). I added a deliberate delay to the response to simulate a real environment and be able to see the loading component
-- _Client_: contains frontend code. In addition to React+Redux, I've used other technologies:
+- _Server_: contains backend code. I have used Node with Express to build an REST API for serve data (phones and images). I added deliberate delay to response to simulate a real environment and be able to see the loading component
+- _Client_: contains frontend code. In addition to React+Redux, I have used other technologies:
   - Styled-Components: for CSS-in-JS styled components
   - TailWindCSS: utility classes for styling
   - TailWind.macro: for integrate TailWindCSS with Styled-Components
 
 ## Decisions
 
-I've not use Create React App (CRA) for generate the project. I'm feeling better having full control over each process and config. Instead, I've use Webpack to bundle app
+I have not use Create React App (CRA) to build the project. I'm feeling better having full control over every process and setup. Instead, I have use Webpack to bundle client app.
 
-I decided implement a **feature based code structuring** in front of layer structuring (actions, reducers, hooks...). I think it is more encapsulated and reusable, which are WebComponents principles. It is more scalable too because all you need modify on a feature, it's together.
+I decided implement a **feature-based code structuring** versus layer structuring (actions, reducers, hooks...). I think it is more encapsulated and reusable, which are WebComponents principles. It is also more scalable because everything that needs to be modified in a feature is in the same place.
 
-For check integration, I implemented CI on github with [github actions](https://github.com/features/actions). It runs on each push (when modify code, not config or aditional files) and runs [unit and e2e tests](#Test)
+For checking integration, I implemented CI on github with [github actions](https://github.com/features/actions). It runs on each push and runs [unit and e2e tests](#Test)
 
 # Install & Run
 
@@ -90,7 +90,7 @@ docker-compose build --parallel
 
 # Test
 
-I've implemented some unit and end-to-end (e2e) tests on client app.
+I have implemented some unit and end-to-end (e2e) tests on client app.
 
 To run it execute:
 
