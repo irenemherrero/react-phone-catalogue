@@ -19,8 +19,13 @@ const PhonesListContainer = () => {
   // return <Loader />
   return (
     <PageCenterWrapper>
-      {isFetching && <GifLoader gif={loading} />}
-      {error !== null ? <Error>{error}</Error> : <PhonesList phones={phones} />}
+      {isFetching ? (
+        <GifLoader gif={loading} />
+      ) : error !== null ? (
+        <Error>{error}</Error>
+      ) : (
+        <PhonesList phones={phones} />
+      )}
     </PageCenterWrapper>
   )
 }

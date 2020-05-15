@@ -8,7 +8,7 @@ It's a GuideSmiths React code challenge
 
 The code are divided in two workspaces: server and client.
 
-- _Server_: contains backend code. I've used Node with Express to build an REST API for serve data (phones and images)
+- _Server_: contains backend code. I've used Node with Express to build an REST API for serve data (phones and images). I added a deliberate delay to the response to simulate a real environment and be able to see the loading component
 - _Client_: contains frontend code. In addition to React+Redux, I've used other technologies:
   - Styled-Components: for CSS-in-JS styled components
   - TailWindCSS: utility classes for styling
@@ -82,7 +82,7 @@ It build client workspace for production and deploy it on a ngix server. The ser
 
 The first time you execute it, it takes a little time to finish because download, build and run docker images. Next times, the images won't be downloaded and built, so that only needs run it.
 
-If you makes changes on code, you should rebuild images:
+If you make code changes, you should rebuild images:
 
 ```bash
 docker-compose build --parallel
