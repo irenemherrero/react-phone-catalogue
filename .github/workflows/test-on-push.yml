@@ -7,5 +7,7 @@ jobs:
       - uses: actions/checkout@v2
       - name: Install Dependencies
         run: yarn install
-      - name: Pass tests
-        run: yarn workspace client test
+      - name: Run unit tests
+        run: yarn workspace client test:unit
+      - name: Run e2e tests
+        run: yarn workspace client test:e2e
