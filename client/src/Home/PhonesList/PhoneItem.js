@@ -13,7 +13,6 @@ const PhoneItem = (props) => {
   return (
     <ResponsiveWrapper data-testid="phone-item" onClick={() => onClick(id)}>
       <PhoneCard>
-        <div></div>
         <PhoneImage src={urlImage} alt={name} />
         <PhoneCardInfo>
           <h1>{name}</h1>
