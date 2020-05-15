@@ -1,4 +1,4 @@
-![GS Phones Test](https://github.com/jgleal/react-phone-catalogue/workflows/GS%20Phones%20Test/badge.svg)
+[![GS Phones Test](https://github.com/jgleal/react-phone-catalogue/workflows/GS%20Phones%20Test/badge.svg)](https://github.com/jgleal/react-phone-catalogue/actions?query=workflow%3A%22GS+Phones+Test%22)
 
 # GuideSmiths Phone Store
 
