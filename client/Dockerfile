@@ -1,7 +1,7 @@
 #temp image to build project
 FROM node:alpine as client-build
 WORKDIR /app
-COPY . ./
+COPY . .
 RUN yarn install --silent
 RUN yarn build
 

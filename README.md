@@ -18,7 +18,7 @@ The code are divided in two workspaces: server and client.
 
 I've not use Create React App (CRA) for generate the project. I'm feeling better having full control over each process and config. Instead, I've use Webpack to bundle app
 
-I've decided implement a **feature based code structuring** in front of layer structuring (actions, reducers, hooks...). I think it is more encapsulated and reusable, which are WebComponents. It is more scalable too, because all you need modify on a feature, it's together.
+I've decided implement a **feature based code structuring** in front of layer structuring (actions, reducers, hooks...). I think it is more encapsulated and reusable, which are WebComponents principles. It is more scalable too because all you need modify on a feature, it's together.
 
 # Install & Run
 

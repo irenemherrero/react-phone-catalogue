@@ -1,5 +1,9 @@
 name: GS Phones Test
-on: [push]
+on:
+  push:
+    paths:
+      - 'client/src/**'
+      - 'server/**.js'
 jobs:
   build:
     runs-on: ubuntu-latest
